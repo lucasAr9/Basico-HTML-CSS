@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ejemplo de formulario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- El metodo GET se envia informacin en la url y se usa para por ejemplo una busqueda -->
+    <!-- El metodo POST es para enviar mucha informacion encriptada. -->
+    <h2>Formulario con input de informacion</h2>
+    <form action="/submit_formulario.php" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <!-- Campo de texto simple -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribir nombre" autofocus required>
+
+            <!-- Campo de mail -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Campo de contraseña -->
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <!-- Campo de telefono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <!-- Para crear un seleccionador de fecha -->
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <!-- Para crear un seleccionador de color complejo -->
+            <label for="color">Color Favorito:</label>
+            <input type="color" id="color" name="color">
+
+            <!-- Para crear un seleccionador con opciones determinadas -->
+            <label for="hobby">Hobby:</label>
+            <select id="hobby" name="hobby">
+                <option value="lectura">Lectura</option>
+                <option value="deporte">Deporte</option>
+                <option value="musica">Música</option>
+            </select>
+
+            <!-- Para crear un area de texto de varias lineas -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+
+            <!-- Para seleccionar en un rango -->
+            <label for="range">Selecciona un rango:</label>
+            <input type="range" id="range" name="range" min="1" max="5">
+
+            <!-- Para seleccionar un archivo -->
+            <label for="file">Selecciona un rango:</label>
+            <input type="file" id="file" name="file" min="1" max="5">
+        </fieldset>
+
+        <!-- Boton para enviar los datos del formulario llenado -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Selector de a uno o multiple</h2>
+    <form action="/submit_encuesta.php" method="POST">
+        <!-- Aca el "name" tiene que ser el mismo para que el campo funcione y el "value" es el valor que se manda al servidor -->
+        <fieldset>
+            <legend>Preferencia de Color</legend>
+            <input type="radio" id="rojo" name="color" value="rojo">
+            <label for="rojo">Rojo</label><br>
+
+            <input type="radio" id="verde" name="color" value="verde">
+            <label for="verde">Verde</label><br>
+
+            <input type="radio" id="azul" name="color" value="azul">
+            <label for="azul">Azul</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Actividades</legend>
+            <input type="checkbox" id="lectura" name="actividades" value="lectura">
+            <label for="lectura">Lectura</label><br>
+
+            <input type="checkbox" id="deporte" name="actividades" value="deporte">
+            <label for="deporte">Deporte</label><br>
+
+            <input type="checkbox" id="musica" name="actividades" value="musica">
+            <label for="musica">Música</label><br>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>

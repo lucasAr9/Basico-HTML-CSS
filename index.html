@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Screenshot_20190621-145947_Instagram.jpg" type="image/x-icon">
+    <title>titulo de pagina</title>
+</head>
+
+<body>
+
+    <!-- Barra superior de la pagina -->
+    <header>
+        <h1>Encabezado Principal</h1>
+        <nav>
+            <!-- Lista desordenada y con <ol></ol> lista ordenada numericamente -->
+            <ul>
+                <li><a href="url">Acerca de</a></li>
+                <li><a href="url">Servicios</a></li>
+                <li><a href="url">Contacto</a></li>
+                <li><a href="mailto:unCorreo@gmail.com">Enviar email</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formulario.html" target="_self">Formulario</a></li>
+                <!-- El _self viene por defecto y te lleva directamente al sitio -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Una seccion de las tantas que puede haber en la pagina -->
+    <section>
+        <hr> <!-- Salto de linea con linea dividora -->
+        <!-- Titulo de la seccion -->
+        <h2>Subtítulo de la Sección (section)</h2>
+        <!-- Parrafo de la seccion -->
+        <p>Este es un párrafo de ejemplo para la sección principal de la página.</p>
+        <!-- negrita e italica -->
+        <p>De este texto la palabra que debe resaltar es <b>negrita</b> y <i>italica</i></p>
+        <!-- La etiqueta strong le da importancia a la palabra y la muestra como negrita -->
+        <p>La palabra importante es: <strong>strong</strong></p>
+        <!-- La etiqueta em le da importancia a la palabra y se muestra como italica -->
+        <p>La palabra importante es: <em>em</em></p>
+        <!-- La etiqueta del nos servira para mostrar texto tachado -->
+        <p>El siguiente archivo ha sido eliminado: <del>archivo.txt</del></p>
+        <!-- La etiqueta ins hara que nuestro texto este subrayado -->
+        <p>El siguiente es mi libro favorito: <ins>El señor de los anillos</ins></p>
+        <!-- Subindice y superindice -->
+        <p>subindice <sub>2</sub> superindice <sup>2</sup></p>
+        <!-- La etiqueta mark hara que el texto se resalte -->
+        <p>Texto remarcado <mark>mark</mark></p>
+        <!-- Con q podemos poner comillas para sitar texto -->
+        <p>Este es un texto entre <q>comillas</q></p>
+        <!-- Para poner un texto que se muestre cuando el cursor esta por encima -->
+        <p>Este es un texto que tiene algo oculto <abbr title="Esto esta oculto">T-T</abbr></p>
+        <!-- Para poder firmar una "carta" usando la etiqueta address -->
+        <address>Para poder firmar una carta</address>
+        <!-- La etiqueta cite nos va a servir para citar un autor o famoso -->
+        <p><cite>Leon Gieco</cite> es un musico argentino</p>
+        <!-- Poner imagenes en la pagina -->
+        <img src="assets/Captura de pantalla 2024-05-13 185719.png" alt="">
+        <a href="https://www.digitalhouse.com/ar" target="_blank"><img src="assets/Captura de pantalla 2024-05-13 185719.png" alt=""></a>
+        <!-- Poner video o audio en la pagina -->
+        <video src="ruta/del/video" controls autoplay muted></video>
+        <!-- Mapa de Google -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26176.376673556642!2d-57.97314559999999!3d-34.9052679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6143077af85%3A0xa466b8a8cd326a29!2sMuseo%20de%20Ciencias%20Naturales%20de%20La%20Plata!5e0!3m2!1ses-419!2sar!4v1715874326905!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Video de YouTube -->
+        <iframe
+            src="https://www.youtube.com/embed/LYU-8IFcDPw?si=6Cbv29CdCi8c6Ct4"
+            width="560" height="315"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <hr> <!-- Salto de linea con linea dividora -->
+    </section>
+
+    <!-- Para encapsular un tema en especifico, es una cagita aparte y a cada una puedo ponerle su propio color y fuente -->
+    <div>
+        <h2>Producto 1</h2>
+        <p>ocupo todo el ancho</p>
+        <span>no ocupo todo el ancho</span>
+    </div>
+    <div>
+        <h2>Producto 2</h2>
+        <p>ocupo todo el ancho</p>
+        <span>no ocupo todo el ancho</span>
+    </div>
+
+    <!-- Al costado de la pagina -->
+    <aside>
+        <h3>Información Adicional</h3>
+        <p>Esta es una barra lateral con información adicional.</p>
+    </aside>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <!-- El _blank abre en otra pestaña el sitio -->
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <a href="https://ar.linkedin.com/">LinkedIn</a>
+        <p>Derechos de autor © 2024 Tu Sitio Web</p>
+    </footer>
+
+</body>
+
+</html>

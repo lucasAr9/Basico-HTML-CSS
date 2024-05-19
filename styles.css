@@ -1,0 +1,274 @@
+/*
+#p1 {                       Hacer referencia a un id
+    color: red;
+}
+.hola {                        Hacer referencia a una clase
+    color: wheat;              Color del texto
+    text-align: center;        Centrar el texto
+}
+.fixed-size {
+    (Pixeles)
+    width: 300px;              Ancho 
+    height: 200px;             Alto
+
+    (Porsentajes)
+    width: 50%;
+    height: 50%;
+
+    (Unidad de vista)
+    width: 50vw;
+    height: 50vh;
+}
+*/
+
+
+/* Reinicio básico de estilos: elimina márgenes y rellenos predeterminados y establece box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para el cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif; /* Define la familia de fuentes */
+    background-color: #f0f0f0; /* Color de fondo del cuerpo */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+}
+
+/* .navbar {
+    position: fixed;          Fija la barra de navegación
+    position: sticky;         Fija la barra de navegación cuando el scroll llega a donde esta
+    top: 0;                   Posiciona en la parte superior
+    width: 100%;              Ocupa todo el ancho de la página
+    background-color: #333;   Color de fondo oscuro
+    color: #f4e033;           Color del texto
+    padding: 10px 20px;       Relleno interno
+    box-sizing: border-box;   Incluye padding y border en el cálculo del ancho
+    border-bottom: 3px solid indigo;  Borde inferior
+    display: flex;            Flexbox para alineación
+    justify-content: space-between;  Espacio entre elementos
+    align-items: center;      Alineación vertical
+    z-index: 1000;            Asegura que la barra esté por encima de otros elementos
+} */
+
+/* Contenedor principal (en este ejemplo el <div>) */
+/* Margen (margin) separacion entre cajas, borde (border), relleno (padding) relleno de la caja, y contenido */
+.container {
+    width: 70%; /* Ancho del contenedor en porcentaje en relacion a la caja */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Relleno interno del contenedor */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+
+/* Estilos para encabezados (h1, h2, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px; /* Margen inferior */
+    color: #333; /* Color del texto */
+}
+
+h1 {
+    text-transform: uppercase; /* Transforma todos los caracteres a mayuscula */
+    font-size: 2em; /* Tamaño de fuente para h1 */
+    margin-bottom: 0.5em; /* Margen inferior específico para h1 */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #dddddd;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Modificar lista de navegacion */
+.lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para párrafos */
+p {
+    margin-bottom: 20px;    /* Margen inferior */
+    text-indent: 20px;      /* Indentado del parrafo */
+    letter-spacing: 0.1px;  /* Espacio entre caracteres */
+    line-height: 1.5;       /* Espacio entre lines, Esto es en formato factor, 1 es el 100%, 1.5 es el 150% */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #3498db; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilos para listas no ordenadas (ul) */
+ul {
+    list-style: disc inside; /* Viñetas dentro del contenedor */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+li {
+    margin-bottom: 10px; /* Margen inferior para elementos de lista */
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 50%; /* Ancho máximo del contenedor padre */
+    height: auto; /* Altura automática */
+    display: block; /* Display en bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos para botones y elementos con clase .button */
+button, .button {
+    display: inline-block; /* Display en línea en bloque */
+    padding: 10px 20px; /* Relleno interno */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    background-color: #3498db; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar el cursor */
+    text-align: center; /* Centra el texto */
+}
+
+button:hover, .button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para formularios */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%; /* Ancho del 100% del contenedor padre */
+    padding: 10px; /* Relleno interno */
+    margin-bottom: 20px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+label {
+    margin-bottom: 10px; /* Margen inferior */
+    display: inline-block; /* Display en línea en bloque */
+    font-weight: bold; /* Texto en negrita */
+}
+
+textarea {
+    height: 100px; /* Altura fija */
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+}
+
+/* Estilos para contenedores flexibles */
+.flex-container {
+    display: flex; /* Display flex */
+    justify-content: space-between; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    background-color: #767575;
+}
+
+.flex-item {
+    flex: 1; /* Crece para llenar el espacio disponible */
+    margin: 10px; /* Margen alrededor del elemento */
+    padding: 20px; /* Relleno interno */
+    background-color: #e0e0e0; /* Color de fondo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para tarjetas */
+.card {
+    color: #1f1f1f; /* Color texto */
+    background-color: #fff; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    padding: 20px; /* Relleno interno */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.card-title {
+    font-size: 1.25em; /* Tamaño de fuente para el título */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+.card-content {
+    font-size: 1em; /* Tamaño de fuente para el contenido */
+    line-height: 1.4; /* Altura de línea */
+}
+
+/* Consultas de medios para diseño responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Ancho del 100% del contenedor padre */
+        padding: 10px; /* Relleno interno */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Dirección de la columna */
+    }
+
+    .flex-item {
+        margin: 0 0 20px 0; /* Margen específico para el diseño en columna */
+    }
+}
+
+/*
+Explicación de las Secciones:
+
+1. Reinicio básico de estilos:
+    *: Elimina márgenes y rellenos predeterminados y establece box-sizing a border-box para todos los
+    elementos, lo que facilita el control del tamaño de los elementos.
+
+2. Estilos básicos para el cuerpo del documento (body):
+    Define la familia de fuentes, el color de fondo, el color del texto y la altura de línea.
+
+3. Contenedor principal (.container):
+    Establece el ancho, el margen automático para centrarlo horizontalmente, el relleno interno, el
+    color de fondo, los bordes redondeados y la sombra.
+
+4. Encabezados (h1, h2, etc.):
+    Establece márgenes, colores y tamaños de fuente específicos para los diferentes niveles de encabezados.
+
+5. Párrafos (p):
+    Define el margen inferior.
+
+6. Enlaces (a):
+    Define el color y el comportamiento al pasar el cursor.
+
+7. Listas no ordenadas (ul):
+    Establece el estilo de viñetas y márgenes.
+
+8. Elementos de lista (li):
+    Define el margen inferior.
+
+9. Imágenes (img):
+    Establece el ancho máximo, la altura automática, el display en bloque y el centrado horizontal.
+
+10. Botones (button y .button):
+    Define el display, el relleno interno, el tamaño de fuente, el color del texto, el color de fondo,
+    el borde, los bordes redondeados, el cursor y el comportamiento al pasar el cursor.
+
+11. Formularios:
+    Estilos para entradas de texto, correos electrónicos, contraseñas y áreas de texto, incluyendo ancho,
+    relleno, margen, borde y bordes redondeados. label: Estilos para etiquetas de formulario.
+
+12. Contenedores flexibles (.flex-container):
+    Uso de Flexbox para distribuir elementos, permitiendo que se envuelvan si es necesario.
+
+13. Elementos flexibles (.flex-item):
+    Define cómo los elementos crecen, el margen, el relleno interno, el color de fondo y los bordes redondeados.
+
+14. Tarjetas (.card):
+    Estilos de fondo, borde, bordes redondeados, sombra, relleno y margen.
+    card-title: Estilo específico para el título de la tarjeta.
+    card-content: Estilo específico para el contenido de la tarjeta.
+
+15. Consultas de medios:
+    Estilos responsivos que ajustan el ancho del contenedor y la dirección de los elementos flexibles en
+    pantallas más pequeñas (ancho máximo de 768px).
+
+Este archivo CSS abarca muchos de los conceptos y técnicas más utilizados en el diseño web,
+proporcionando una base sólida para empezar a construir y estilizar páginas web.
+*/

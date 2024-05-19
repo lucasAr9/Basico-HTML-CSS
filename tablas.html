@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Frutos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Ejemplo de tablas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Tabla en HTML -->
+    <table>
+        <!-- Título de la tabla -->
+        <caption>Lista de Frutos</caption>
+        <!-- Encabezado de la tabla -->
+        <thead>
+            <!-- Fila de encabezado -->
+            <tr>
+                <!-- Columna de encabezado -->
+                <th>Fruto</th>
+                <th>Color</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- Cuerpo de la tabla -->
+        <tbody>
+            <!-- Fila de datos -->
+            <tr>
+                <!-- Celda de datos -->
+                <td>Manzana</td>
+                <td>Roja</td>
+                <td>$1.20</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Amarilla</td>
+                <td rowspan="2">$0.80</td>
+            </tr>
+            <tr>
+                <td>Kiwi</td>
+                <td>Verde</td>
+                <!-- <td>$1.50</td> -->
+            </tr>
+        </tbody>
+        <!-- Pie de página de la tabla -->
+        <tfoot>
+            <tr>
+                <!-- Celda que abarca todas las columnas con "colspan" que se expande horizontalmente y "rowspan" expande verticalmente -->
+                <td colspan="3">Precios en dólares estadounidenses.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
