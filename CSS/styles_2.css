@@ -1,0 +1,163 @@
+/* Establece un estilo básico para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente para el texto */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: #f0f0f0; /* Define un color de fondo claro */
+    padding-top: 0px;
+}
+
+/* Encabezado principal del sitio */
+header {
+    background-color: lightseagreen; /* Color de fondo */
+    color: white; /* Color de texto */
+    font-size: 28px; /* Tamaño de la fuente */
+    padding: 22px; /* Relleno interno */
+    margin-bottom: 15px; /* Espacio debajo del encabezado */
+    text-align: center; /* Centra el texto */
+    border-bottom: 3px solid indigo; /* Borde inferior */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+}
+
+/* Sección principal */
+section {
+    width: 50%; /* Ancho del 50% del contenedor */
+    margin: 0 auto 15px; /* Centra el contenedor horizontalmente y añade margen inferior */
+    background-color: gainsboro; /* Color de fondo */
+    padding-top: 30px; /* Relleno superior */
+    padding-bottom: 30px; /* Relleno inferior */
+    padding-left: 12px; /* Relleno izquierdo */
+    border: 1px dashed black; /* Borde rayado */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+}
+
+/* Pie de página */
+footer {
+    background-color: rebeccapurple; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 12px; /* Relleno interno */
+    height: 40px; /* Altura fija */
+    text-align: center; /* Centra el texto */
+    border-top: 1px solid lightseagreen; /* Borde superior */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+}
+
+/* Estilos para una barra de navegación fija */
+.nav-bar {
+    list-style: none; /* Retira el punto de la lista */
+    position: fixed; /* Fija la posición en la pantalla */
+    width: 100%; /* Ancho completo */
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color de texto */
+    padding: 10px; /* Relleno interno */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+    display: flex; /* Usa un diseño flexible */
+    justify-content: space-between; /* Espacia los elementos dentro del contenedor */
+    top: 0px; /* Distancia desde la parte superior */
+}
+
+/* Estilo para la lista dentro de la barra de navegación */
+.nav-bar ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Usa un diseño flexible */
+}
+
+/* Estilo para los elementos de la lista de la barra de navegación */
+.nav-bar li {
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.nav-bar a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 5px 10px; /* Relleno interno */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+/* Estilo para los enlaces de la barra de navegación al pasar el cursor */
+.nav-bar a:hover {
+    background-color: lightseagreen; /* Cambia el fondo al pasar el cursor */
+}
+
+/* Estilo para un contenedor flexible */
+.flex-container {
+    display: flex; /* Usa un diseño flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+/* Estilo para los elementos dentro del contenedor flexible */
+.flex-item {
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 20px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde */
+    flex: 1; /* Permite que el elemento crezca */
+    min-width: 200px; /* Ancho mínimo */
+    box-sizing: border-box; /* Incluye el borde en el ancho total */
+}
+
+/* Estilo para un botón */
+button {
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+/* Estilo para el botón al pasar el cursor */
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilo para las imágenes */
+img {
+    max-width: 20%; /* Ancho máximo del contenedor padre */
+    height: auto; /* Altura automática */
+    display: block; /* Display en bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilo para una tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsa los bordes */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    border: 1px solid #ddd; /* Borde */
+    padding: 8px; /* Relleno interno */
+    text-align: left; /* Alineación del texto */
+}
+
+/* Estilo para la fila de encabezado de la tabla */
+th {
+    background-color: #f4f4f4; /* Color de fondo */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Consultas de medios para diseño responsivo */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Dirección en columna */
+        text-align: center; /* Centra el texto */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Dirección en columna */
+    }
+
+    section {
+        width: 80%; /* Ancho del 80% del contenedor */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+}
