@@ -7,15 +7,15 @@
     text-align: center;        Centrar el texto
 }
 .fixed-size {
-    (Pixeles)
+    (Pixeles, unidad fija)
     width: 300px;              Ancho 
     height: 200px;             Alto
 
-    (Porsentajes)
+    (Porsentajes de la pantalla, unidad dinamica)
     width: 50%;
     height: 50%;
 
-    (Unidad de vista)
+    (Unidad de vista, unidad dinamica)
     width: 50vw;
     height: 50vh;
 }
@@ -37,19 +37,19 @@ body {
 }
 
 /* .navbar {
-    position: fixed;          Fija la barra de navegación
-    position: sticky;         Fija la barra de navegación cuando el scroll llega a donde esta
-    top: 0;                   Posiciona en la parte superior
-    width: 100%;              Ocupa todo el ancho de la página
-    background-color: #333;   Color de fondo oscuro
-    color: #f4e033;           Color del texto
-    padding: 10px 20px;       Relleno interno
-    box-sizing: border-box;   Incluye padding y border en el cálculo del ancho
+    position: fixed;                  Fija la barra de navegación
+    position: sticky;                 Fija la barra de navegación cuando el scroll llega a donde esta
+    top: 0;                           Posiciona en la parte superior
+    width: 100%;                      Ocupa todo el ancho de la página
+    background-color: #333;           Color de fondo oscuro
+    color: #f4e033;                   Color del texto
+    padding: 10px 20px;               Relleno interno
+    box-sizing: border-box;           Incluye padding y border en el cálculo del ancho
     border-bottom: 3px solid indigo;  Borde inferior
-    display: flex;            Flexbox para alineación
-    justify-content: space-between;  Espacio entre elementos
-    align-items: center;      Alineación vertical
-    z-index: 1000;            Asegura que la barra esté por encima de otros elementos
+    display: flex;                    Flexbox para alineación
+    justify-content: space-between;   Espacio entre elementos
+    align-items: center;              Alineación vertical
+    z-index: 1000;                    Asegura que la barra esté por encima de otros elementos
 } */
 
 /* Contenedor principal (en este ejemplo el <div>) */
@@ -123,6 +123,10 @@ img {
     margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
+img:hover {
+    opacity: 0.7;
+}
+
 /* Estilos para botones y elementos con clase .button */
 button, .button {
     display: inline-block; /* Display en línea en bloque */
@@ -164,6 +168,7 @@ textarea {
 .flex-container {
     display: flex; /* Display flex */
     justify-content: space-between; /* Espacio entre los elementos */
+    flex-direction: row; /* Poner las cajas de manera horizontal, hasta que la pantalla se achique y cambie a vertical con column */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     background-color: #767575;
 }
@@ -205,7 +210,7 @@ textarea {
     }
 
     .flex-container {
-        flex-direction: column; /* Dirección de la columna */
+        flex-direction: column; /* Cambiar la dirección de los contenedores a columna ya que se achiva el ancho de la pantalla */
     }
 
     .flex-item {

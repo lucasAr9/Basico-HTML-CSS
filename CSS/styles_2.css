@@ -88,7 +88,7 @@ footer {
 .flex-container {
     display: flex; /* Usa un diseño flexible */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-    gap: 20px; /* Espaciado entre los elementos */
+    gap: 10px; /* Espaciado entre los elementos */
 }
 
 /* Estilo para los elementos dentro del contenedor flexible */
@@ -102,6 +102,13 @@ footer {
 }
 
 /* Estilo para un botón */
+#div-del-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
 button {
     background-color: #007BFF; /* Color de fondo */
     color: white; /* Color del texto */
@@ -109,7 +116,7 @@ button {
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s; /* Transición suave para el fondo */
+    transition: background-color 1s; /* Transición suave para el fondo */
 }
 
 /* Estilo para el botón al pasar el cursor */
@@ -160,4 +167,47 @@ th {
         width: 80%; /* Ancho del 80% del contenedor */
         margin: 0 auto; /* Centra el contenedor horizontalmente */
     }
+}
+
+
+/* Contenedor Flex */
+.container {
+    /* Esto convierte al contenedor en un contenedor flex */
+    display: flex;
+
+    /* Esto define la dirección principal de los elementos flex. Puede ser fila (por defecto) o columna */
+    flex-direction: row; /* o 'column', 'row-reverse', 'column-reverse' */
+
+    /* Esto alinea los elementos flex a lo largo del eje horizontal (para 'row') o vertical (para 'column') */
+    justify-content: flex-start; /* o 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly' */
+
+    /* Esto alinea los elementos flex a lo largo del eje vertical (para 'row') o horizontal (para 'column') */
+    align-items: stretch; /* o 'flex-start', 'flex-end', 'center', 'baseline' */
+
+    /* Esto alinea los elementos flex cuando hay más de una línea */
+    align-content: stretch; /* o 'flex-start', 'flex-end', 'center', 'space-between', 'space-around' */
+
+    /* Esto permite que los elementos flex se envuelvan en varias líneas */
+    flex-wrap: nowrap; /* o 'wrap', 'wrap-reverse' */
+}
+
+/* Elemento Flex */
+.item {
+    /* Esto define el orden en el que se muestra el elemento flex */
+    order: 0; /* cualquier número entero */
+
+    /* Esto define la capacidad del elemento flex para crecer si hay espacio disponible */
+    flex-grow: 0; /* cualquier número entero */
+
+    /* Esto define la capacidad del elemento flex para encogerse si es necesario */
+    flex-shrink: 1; /* cualquier número entero */
+
+    /* Esto define el tamaño base del elemento flex antes de que se distribuya el espacio restante */
+    flex-basis: auto; /* o cualquier longitud o porcentaje */
+
+    /* Esto es una abreviatura para establecer 'flex-grow', 'flex-shrink' y 'flex-basis' al mismo tiempo */
+    flex: 0 1 auto; /* o cualquier combinación de los valores anteriores */
+
+    /* Esto alinea un elemento flex individual a lo largo del eje vertical (para 'row') o horizontal (para 'column') */
+    align-self: auto; /* o 'flex-start', 'flex-end', 'center', 'baseline', 'stretch' */
 }
